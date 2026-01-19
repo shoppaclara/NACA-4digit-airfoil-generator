@@ -21,3 +21,8 @@ Generated airfoils were compared against published NACA geometries, showing clos
 ## Applications
 - CAD modeling
 - Introductory aerodynamic analysis
+
+## References: 
+Introduction to Flight - Eigth Edition by John D. Anderson Jr. 
+https://web.stanford.edu/~cantwell/AA200_Course_Material/The%20NACA%20airfoil%20series.pdf
+
