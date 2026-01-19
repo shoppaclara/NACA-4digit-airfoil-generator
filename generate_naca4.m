@@ -7,7 +7,7 @@ four_digstring = '1412';  % NACA 4-digit airfoil
 N = 100;                  % Number of Points to generate along the chord
 
 
-function [fileName] = NACA_airfoil_gen(C, four_digstring, N, K)					  
+function [generate_naca4] = NACA_airfoil_gen(C, four_digstring, N, K)					  
    t=str2num(four_digstring(3:4))/100;      % Thickness divided by 100 (XX=12, thickness is 12% of chord)
    m=str2num(four_digstring(1))/100;        % Maximum camber divided by 100 (if M = 2 , chamber is 2% of chord)
    p=str2num(four_digstring(2))/10;         % Position of maximum camber divided by 10 (P=4, max chmaber is at 40% of chord)
@@ -67,5 +67,7 @@ function [fileName] = NACA_airfoil_gen(C, four_digstring, N, K)
    writetable(T, fileName, 'WriteVariableNames', false);
    fprintf('File saved as %s\n', fileName);
 end
+
+%% Run Function:
 NACA_airfoil_gen(C, four_digstring, N)
 
